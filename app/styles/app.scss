@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Droid Serif', serif;
+  color: red;
+  src: url(public/Artifika-Regular.ttf) format("truetype");
+}
+
+
+$primary-color: RGBA(41, 0, 0, 1);
+$second-color: #C7EFCF;
+$third-color: RGBA(255, 255, 255, 0);
+$font-color: grey;
+$fourth-color: #F0B67F;
+$fifth-color: #FE5F55;
+
+html, body {
+  background-color: $primary-color;
+  height: 100%;
+  padding-left: 5%
+}
+.main{
+  width: 10%;
+  height: 900px;
+  border-sizing: border-box;
+  border-right: 3px solid white;
+  color: white;
+  background-color: $primary-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom:0;
+}
+.content{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.main a:hover {
+  color: white;
+  background-color: $third-color;
+  border-margin: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.title{
+  text-align: center;
+}
+.links{
+  text-align: center;
+  color: black;
+  padding-top: 50px;
+
+  a:link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+  }
+  a:visited {
+    color: white;
+  }
+}
+
+
+/*parallax*/
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+
+}
+.parallax__layer--deep{
+  transform: translateZ(-2px) scale(3);
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.parallax_section0{
+  background-image: url("http://api.ning.com/files/NfZBQ8g66NRNsL8JEL5RDsGxpA11Wj1o94szpEjVIdez92WgcAjP0SyYcXyyFG1Yovbwly3dERoSqpqjQ0P1N6ztQFt3UlHD/FreeBackgroundImagesCss.jpg");
+  background-image: cover;
+  height: 800px;
+  img{
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 3px;
+  }
+
+
+}
+.parallax_section1{
+  background-color: $primary-color;
+  left: 20%;
+  height: 800px;
+
+}
+.parallax_section2{
+  background-color: white;
+  h1 {
+  }
+}
+.parallax_section3{
+  background-color: $third-color;
+  text-align: center;
+  color: white;
+  .bottom{
+    padding-top: 700px;
+  }
+}
+.row-1 > p{
+  font-size: 22px;
+}
