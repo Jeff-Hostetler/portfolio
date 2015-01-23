@@ -1,7 +1,5 @@
 @font-face {
-  font-family: 'Droid Serif', serif;
-  color: red;
-  src: url(public/Artifika-Regular.ttf) format("truetype");
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -15,7 +13,8 @@ $fifth-color: #FE5F55;
 html, body {
   background-color: $primary-color;
   height: 100%;
-  padding-left: 5%
+  padding-left: 5%;
+  font-family: 'Artifika', serif;
 }
 .main{
   width: 10%;
@@ -28,6 +27,10 @@ html, body {
   top: 0;
   left: 0;
   bottom:0;
+
+  a:link {
+    padding: 20px;
+  }
 }
 .content{
   margin-left: 100px;
@@ -47,16 +50,6 @@ html, body {
   text-align: center;
   color: black;
   padding-top: 50px;
-
-  a:link {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 20px;
-  }
-  a:visited {
-    color: white;
-  }
 }
 
 
@@ -99,8 +92,6 @@ html, body {
     border: 2px solid white;
     border-radius: 3px;
   }
-
-
 }
 .parallax_section1{
   background-color: $primary-color;
@@ -110,17 +101,53 @@ html, body {
 }
 .parallax_section2{
   background-color: white;
-  h1 {
+
+  .section2-icons{
+    text-align:center;
+
+    img{
+      height: 150px;
+      padding: 20px;
+    }
+  }
+
+  .content-box{
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    h3{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    a{
+      color: black;
+    }
   }
 }
 .parallax_section3{
   background-color: $third-color;
   text-align: center;
   color: white;
-  .bottom{
+
+  .section3-mid{
     padding-top: 700px;
+  }
+  .section3-bottom{
+    background-color: white;
   }
 }
 .row-1 > p{
   font-size: 22px;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+a:visited {
+  color: white;
 }
